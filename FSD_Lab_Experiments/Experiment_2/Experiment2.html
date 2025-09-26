@@ -1,24 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <title>Login Page</title>
 </head>
 <body>
-    <table border="2" style="width: 80%;">
-        <tr>
-            <th >Logo</th><th colspan="4">Web site Name</th>
-        </tr>
-        <tr>
-            <td>Home</td><td>Login</td><td>Registration</td><td>Catalogue</td><td>Cart</td>
-        </tr>
-        <tr><td>CSE</td><td colspan="4" rowspan="4" style="padding: 50px;">
-            <!-- <td>User name:</td><td><input type="text" name="id" placeholder="Enter user id"> -->
-        </td></tr>
-        <tr><td>ECE</td>></tr>
-        <tr><td>EEE</td>></tr>
-        <tr><td>Civil</td>></tr>
-    </tables>
+  <table border="2" width="80%" align="center">
+    
+    <tr bgcolor="#DAA06D"> 
+      <th>Logo</th>
+      <th colspan="4">WebSite Name</th>
+    </tr>
+
+    
+    <tr bgcolor="#FAD6A5"> 
+      <td>Home</td>
+      <td>Login</td>
+      <td>Registration</td>
+      <td>Catalogue</td>
+      <td>Cart</td>
+    </tr>
+
+    
+    <tr>
+      <td>CSE</td>
+      <td colspan="4" rowspan="4" align="center">
+        <h2>Login Page</h2>
+        <form>
+          <table>
+            <tr>
+              <td align="right"><label for="username">User Name:</label></td>
+              <td><input type="text" id="username" name="username"></td>
+            </tr>
+            <tr>
+              <td align="right"><label for="password">Password:</label></td>
+              <td><input type="password" id="password" name="password"></td>
+            </tr>
+            <tr>
+              <td colspan="2" align="center">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+              </td>
+            </tr>
+          </table>
+        </form>
+      </td>
+    </tr>
+    <tr><td>ECE</td></tr>
+    <tr><td>EEE</td></tr>
+    <tr><td>CIVIL</td></tr>
+  </table>
 </body>
 </html>
