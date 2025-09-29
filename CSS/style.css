@@ -1,3 +1,15 @@
-p{
+/* p{
     color: aqua;
+} */
+
+#para1{
+    color: aqua;
+}
+
+#para2{
+    color: aquamarine;
+}
+
+#pra3{
+    color: rgb(220, 245, 224);
 }
