@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        td {
+            text-align: center;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <form><caption><h1 style="text-align: center;">Registration Form</h1></caption>
+        <table style="margin: auto; border-radius: 20px; overflow: hidden;" cellpadding="10" border="1" cellspacing="0">
+            <tr>
+                <td>Name</td><td><input type="text" placeholder="First Name"><br>
+                <input type="text" placeholder="Last Name"></td>
+            </tr>
+            <tr>
+                <td>Password</td><td><input type="password" placeholder="Enter Password"></td>
+            </tr>
+            <tr>
+                <td>E-mail</td><td><input type="email" placeholder="abc@examle.com"></td>
+            </tr>
+            <tr>
+                <td>Phone</td><td><input type="number" placeholder="Enter contact"></td>
+            </tr>
+            <tr>
+                <td>Sex</td><td><input type="radio" name="Gender" value="Male">Male
+                <input type="radio" name="Gender" name="Female">Female</td>
+            </tr>
+            <tr>
+                <td>Date of Birth</td><td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>Languages Known</td><td><input type="checkbox">English<br>
+                <input type="checkbox">Hindi<br>
+                <input type="checkbox">Tamil<br>
+                <input type="checkbox">French</td>
+            </tr>
+            <tr>
+                <td>Address</td><td><input type="text" placeholder="Flat number"><br>
+                <input type="text" placeholder="Stree Address"><br>
+                <input type="text" placeholder="City"><br>
+                <input type="text" placeholder="State"></td>
+            </tr>
+            <tr><td colspan="2"><input type="submit" value="submit"></tr></td></tr>
+        </table>
+    </form>
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function (e) {
+            const firstName = document.querySelector('input[placeholder="First Name"]');
+            const lastName = document.querySelector('input[placeholder="Last Name"]');
+            const password = document.querySelector('input[type="password"]');
+            const email = document.querySelector('input[type="email"]');
+            const phone = document.querySelector('input[type="number"]');
+
+            const fullName = firstName.value.trim() + lastName.value.trim();
+            if (!/^[A-Za-z]+$/.test(fullName) || fullName.length < 6) {
+                alert('Name must contain only alphabets and be at least 6 characters long.');
+                firstName.focus();
+                e.preventDefault();
+                return false;
+            }
+
+            if (password.value.length < 6) {
+                alert('Password must be at least 6 characters long.');
+                password.focus();
+                e.preventDefault();
+                return false;
+            }
+
+            const emailRegex = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+            if (!emailRegex.test(email.value)) {
+                alert('Please enter a valid E-mail ID (name@domain.com).');
+                email.focus();
+                e.preventDefault();
+                return false;
+            }
+
+            const phoneRegex = /^\d{10}$/;
+            if (!phoneRegex.test(phone.value)) {
+                alert('Phone number must contain exactly 10 digits.');
+                phone.focus();
+                e.preventDefault();
+                return false;
+            }
+        });
+    </script>
+
+
+
+</body>
+</html>
