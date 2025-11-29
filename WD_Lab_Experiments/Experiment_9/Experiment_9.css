@@ -1,5 +1,5 @@
 body { 
-  background-image: url('beautiful-constellations-dark-sky.jpg'); 
+  background-image: url('flag_image.jpg'); 
   background-size: cover; 
   background-repeat: no-repeat; 
   background-attachment: fixed; 
@@ -28,7 +28,7 @@ header {
 } 
 
 .features { 
-  background-image: url('global-communication-background-business-network-design.jpg'); 
+
   background-size: cover; 
   background-repeat: no-repeat; 
   background-position: center; 
