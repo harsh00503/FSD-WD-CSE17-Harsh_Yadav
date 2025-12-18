@@ -1,0 +1,86 @@
+body{
+    margin: 0px 0px;
+    background-color: #457b9d;
+}
+
+#header{
+    background-image: url("fort_bacground2.jpg");
+    background-size: cover;
+    /* height: 500px; */
+    margin-top: 0px;
+    margin: 0px auto;
+    text-align: center;
+    padding: 100px 50px;
+}
+h2{
+    width: 500px;
+    border-bottom: 3px solid #ffb703;
+    padding-bottom: 10px;
+}
+h4{
+    color: #fff;
+    text-align: center;
+}
+h1{
+    background-color: #457b9d;
+    width: 500px;
+    margin: 0px auto;
+    padding: 10px 5px;
+    border-radius: 10px;
+    color: #f1faee;
+}
+#intro{
+    background-color: #a8dadc;
+    color: black;
+    width: 800px;
+    margin: 0px auto;
+    padding: 10px 5px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+#main-block{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image{
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    border-radius: 50%;
+    border: 2px solid #d8cefe;
+}
+.image:hover{
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2)
+}
+.info{
+    margin-left: 20px;
+    color: #457b9d;
+    text-shadow: 0px 0px 1px black;
+}
+.info-card{
+    width: 1000px;
+    background-color: #1d3557;
+    margin: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.4),
+                0 0 11px rgba(255, 183, 3, 0.3);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+#gallery{
+    background-color: #1d3557;
+    width: 1200px;
+    margin: 20px auto;
+    border-radius: 20px;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.4),
+                0 0 11px rgba(255, 183, 3, 0.3);
+}
